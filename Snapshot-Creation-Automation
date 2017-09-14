@@ -1,4 +1,4 @@
-/*This Node.js Lambda Function does the following :
+/*This Node.js Lambda Function does the following below :
 1. Retrieves the Meta Data for all Instances with the Tag 'snapshot' 
 2. Creates a Snapshot for all Non Root Volume
 3. Store the Meta Data for that Snapshot in the DynamoDB Table 'Snaps' [Please change Snaps to your DynamoDB Table Name
