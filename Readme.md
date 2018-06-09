@@ -10,7 +10,7 @@ These scripts should be used as guidance for creating a complete EBS Life Cycle 
 
 This solution uses Amazon Lambda, EC2, CloudWatch Events, DynamoDB and EC2 Run Command(bonus script). When used together, these functions will :
 
-A. Create Snapshots of your EBS volumes that are attached to your EC2 Instances. This is a accomplish by looking for EC2 Instances that has a certain Tag assigned to them, for example 'snapshot'. Snapshots are then created of the Non Root EBS volumes that are attached to this Instance. Please note that I used the Tag "snapshot" in the snapshot creation script but you can change this what you like. 
+A. Create Snapshots of your EBS volumes that are attached to your EC2 Instances. This is accomplished by looking for EC2 Instances that has a certain Tag assigned to them, for example 'snapshot'. Snapshots are then created of the Non Root EBS volumes that are attached to this Instance. Please note that I used the Tag "snapshot" in the snapshot creation script but you can change this what you like. 
 
 B. The meta-data for each snapshot is stored in a DynamoDB Table (caled 'Snaps'). 
 
